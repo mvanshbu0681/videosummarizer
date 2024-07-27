@@ -1,15 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // Correct import
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import Hero from "./Hero";
-import Playlist from "./Playlist";
+// import Playlist from "./Playlist";
+//import Transaction from "./Steps";
+import View from "./Steps";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Hero />
-    <App />
-    <Playlist />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        {/* <Route path="/Features" element={<App />} />
+        <Route path="/History" element={<Playlist />} /> */}
+        <Route path="/About" element={<View />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -1,24 +1,32 @@
+import React from "react";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
 const includedFeatures = [
-  //   "Private forum access",
-  //   "Member resources",
-  //   "Entry to annual conference",
-  //   "Official member t-shirt",
+  // "Private forum access",
+  // "Member resources",
+  // "Entry to annual conference",
+  // "Official member t-shirt",
 ];
 
-export default function Example() {
+export default function PlayList() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div
+      className="bg-gradient-to-r from-purple-200 via-pink-200 to-blue-200 py-24 sm:py-32"
+      style={{
+        background:
+          "linear-gradient(135deg, #f3e6ff 0%, #e6e6ff 50%, #ccf2ff 100%)",
+        minHeight: "100vh",
+      }}
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Make Your Own Preferable Playlist
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            "Create personalized playlists by adding your favorite videos.
+            Create personalized playlists by adding your favorite videos.
             Organize and access your curated content easily for a tailored
-            viewing experience"
+            viewing experience.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
@@ -93,21 +101,6 @@ export default function Example() {
                 <p>52 videos</p>
               </div>
             </div>
-
-            {/* <ul
-              role="list"
-              className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
-            >
-              {includedFeatures.map((feature) => (
-                <li key={feature} className="flex gap-x-3">
-                  <CheckIcon
-                    aria-hidden="true"
-                    className="h-6 w-5 flex-none text-indigo-600"
-                  />
-                  {feature}
-                </li>
-              ))}
-            </ul> */}
           </div>
           <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
             <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
@@ -149,7 +142,7 @@ export default function Example() {
                   </div>
                 </div>
                 <p className="mt-6 text-xs leading-5 text-gray-600">
-                  Make your learning journey more easy by Summarizer.
+                  Invoices and receipts available for easy company reimbursement
                 </p>
               </div>
             </div>
